@@ -54,7 +54,7 @@ module "blog_sg" {
   name = "blog_new"
 
   vpc_id = module.blog_vpc.vpc_id
-  ingress_rules = ["http-80-tcp", "https-443]
+  ingress_rules = ["http-80-tcp", "https-443"]
 }
 
 resource "aws_security_group" "blog" {
